@@ -14,14 +14,29 @@ namespace Nose03
         }
     static int Square(int x)//skapar en int metod med parametern int. Värdet är X då man själv kan välja värdet.
         {
-            return x * x;//returnerar värdet gånger sig själv.
+            int Result = x * x;
+            return Result;//returnerar värdet gånger sig själv.
         }
 
-        static void Main(string[] args)
+    static float Multi(float c, float z)//en metod med 2 floats
         {
-            hello32();//kallade på metoden jag nyss skapat
+            //c = 2.5f;
+            //z = 1f;
+            float Result = c * z;
+            return Result;//returnerar c multiplicerat med z.
+        }
+    static void Main(string[] args)
+        {
+            //();//kallade på metoden jag nyss skapat
 
-            Square(4);//kallar på denna metod.  
+           // int i = Square(4);//kallar på denna metod.  
+            //float e = Multi(2.5f, 1f);
+
+            Console.WriteLine(Square(4));
+            Console.ReadLine();
+
+            Console.WriteLine(Multi(2.5f, 2f));
+            Console.ReadLine();
         }
        
 
