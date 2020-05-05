@@ -25,17 +25,37 @@ namespace Nose03
             float Result = c * z;
             return Result;//returnerar c multiplicerat med z.
         }
+
+    static float RightTriangleArea (float b, float h)//en float för basen och en för höjden
+        {
+            float bh = b * h;//multiplicerar basen med hökden och lägger värdet i en ny float
+            float area = bh / 2;//Tar det nya värdet dividerat på 2
+            return area;//returnerar nytt värde
+        }
+
+        static double CircleArea (float o)
+        {
+            float radie = o / 2;
+            Double Pi = 3.14;//använder mig av en double då vi har mer än en decimal
+            Double area = radie * radie * Pi;//arean är r*r*pi
+            return area;
+        }
     static void Main(string[] args)
         {
             //();//kallade på metoden jag nyss skapat
 
-           // int i = Square(4);//kallar på denna metod.  
-            //float e = Multi(2.5f, 1f);
+            /*hello32();//kallar på metod 1
 
-            Console.WriteLine(Square(4));
+            Console.WriteLine(Square(4));//kallar på metod 2
             Console.ReadLine();
 
-            Console.WriteLine(Multi(2.5f, 2f));
+            Console.WriteLine(Multi(2.5f, 2f));//kallar på metod 3
+            Console.ReadLine();
+
+            Console.WriteLine(RightTriangleArea(2.5f,4f));
+            Console.ReadLine();*/
+
+            Console.WriteLine(CircleArea(6));
             Console.ReadLine();
         }
        
